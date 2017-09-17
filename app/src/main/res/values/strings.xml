@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">GuessNumber</string>
+    <string name="letsGuess">Let\'s Guess!</string>
+    <string name="baseAlarm">Please guess a number in 0~100.</string>
+    <string name="tooBig">Too Big!</string>
+    <string name="tooLittle">Too Little!</string>
+    <string name="guessRight">Congratulation! Guess correct! Let\'s guess another number!</string>
+</resources>

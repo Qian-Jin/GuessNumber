@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">猜数字</string>
+    <string name="letsGuess">猜一猜</string>
+    <string name="baseAlarm">请猜测一个在0～100之间的数字</string>
+    <string name="tooBig">太大了!</string>
+    <string name="tooLittle">太小了!</string>
+    <string name="guessRight">恭喜你！猜对了！再来一局！</string>
+
+</resources>
