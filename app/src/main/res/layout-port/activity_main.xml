@@ -19,7 +19,8 @@
         android:orientation="vertical"
         android:gravity="center"
         android:layout_margin="5dp"
-        >
+        tools:layout_editor_absoluteY="8dp"
+        tools:layout_editor_absoluteX="8dp">
 
 
         <TextView
@@ -27,14 +28,14 @@
             android:layout_width="300dp"
             android:layout_height="50dp"
             android:gravity="center"
-            android:textSize="20dp"/>
+            android:textSize="20sp"/>
 
         <EditText
             android:id="@+id/guessNumberText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:textSize="20dp"
+            android:textSize="20sp"
             android:inputType="number"
             tools:layout_editor_absoluteY="109dp"
             tools:layout_editor_absoluteX="69dp"

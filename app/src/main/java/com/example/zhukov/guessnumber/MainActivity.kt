@@ -2,21 +2,28 @@ package com.example.zhukov.guessnumber
 
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
-import android.view.View //很重要，添加当前View
-import kotlinx.android.synthetic.main.activity_main.* //很重要，这样才能读到控件名称
-import android.content.pm.ApplicationInfo
-
-
-
+import android.view.View
+import kotlinx.android.synthetic.main.activity_main.*
+import android.content.res.Configuration
 
 
 class MainActivity : AppCompatActivity() {
 
     var randomNum : Int = ((Math.random()*100).toInt())
 
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        var mCurrentOrintation : Int = resources.configuration.orientation
+        if (mCurrentOrintation == Configuration.ORIENTATION_LANDSCAPE)
+        {
+            setContentView(R.layout.activity_main)
+        }
+        else if (mCurrentOrintation == Configuration.ORIENTATION_PORTRAIT)
+        {
+            setContentView(R.layout.activity_main)
+        }
+        alarmText.text = this.getString(R.string.baseAlarm)
     }
 
     public fun guessNumberTextOnClick(v: View?)
