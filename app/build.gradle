@@ -8,7 +8,7 @@ def releaseTime() {
 
 android {
     compileSdkVersion 25
-    buildToolsVersion "25.0.2"
+    buildToolsVersion '26.0.2'
     defaultConfig {
         applicationId "com.example.zhukov.guessnumber"
         minSdkVersion 21
@@ -30,7 +30,7 @@ android {
             if (outputFile != null && outputFile.name.endsWith('.apk')) {
                 //这里修改apk文件名
                 def fileName = "GuessNumber_-${defaultConfig.versionCode}-${defaultConfig.versionName}-${releaseTime() }.apk"
-                output.outputFile = new File(outputFile.parent, fileName)
+                //output.outputFile = new File(outputFile.parent, fileName)
             }
         }
     }
